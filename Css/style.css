@@ -1,0 +1,90 @@
+@media screen and (min-width: 800px) {
+    .main {
+        width: calc(100% - 100px);
+    }
+    .corps {
+        flex-direction: row;
+    }
+    .image {
+        width: 100%;
+    }
+    .secondaire {
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 800px) {
+    .corps {
+        flex-direction: column;
+    }
+    .caseImage {
+        order: 1;
+        width: 48%;
+    }
+    .image {
+        width: 100%;
+    }
+    .secondaire p{
+        width: 50%;
+    }
+    .secondaire {
+        flex-direction: row;
+        gap: 10px;
+    }
+}
+.main {
+    margin: auto;
+}
+.header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 10px;
+    position:fixed;
+    top:0;
+    width: 100%;
+    left: 0;
+}
+.corps {
+    display: flex;
+    gap: 10px;
+    margin-top: 70px;
+}
+.primaire {
+    border: 1px solid black;
+    padding: 5px;
+    flex: 2;
+}
+.primaire h2{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight:lighter;
+    margin: 0;
+    font-size: 30px;
+}
+.secondaire {
+    text-align: justify;
+    border: 1px solid black;
+    background-color: rgb(173, 199, 238);
+    padding: 5px;
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+}
+.secondaire h3 {
+    color: grey;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: lighter;
+    margin: 0;
+    font-size: 20px;
+    width: 100%;
+}
+.pied {
+    text-align: center;
+    background-color: black;
+    color: white;
+    margin-top: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+}
